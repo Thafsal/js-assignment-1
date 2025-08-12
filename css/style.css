@@ -1,0 +1,86 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling with gradient background */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #e82573, #da25fa); /* change colors as you wish */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Glassmorphism Container */
+.container {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  padding: 25px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  text-align: center;
+  color: #fff;
+}
+
+/* Heading */
+h1 {
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+/* Button */
+button {
+  padding: 12px;
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Result Card */
+.result-card {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 8px;
+  text-align: left;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.hidden {
+  display: none;
+}
+
+.result-card h2 {
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.result-card p {
+  margin: 5px 0;
+  color: #f9f9f9;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 500px) {
+  .container {
+    padding: 15px;
+  }
+}
